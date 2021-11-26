@@ -247,10 +247,12 @@ def checkAnswer10(ans10f, sum10f):
         _check10 = int(0)
         return _check10
 
-
-
 # create a function that adds all the points 
+def totalScore(check1f, check2f, check3f, check4f, check5f, check6f, check7f, check8f, check9f, check10f):
+    _totalScore = int(check1f + check2f + check3f + check4f + check5f + check6f + check7f + check8f + check9f + check10f)
 # display the results
+    print(f"Result: {_totalScore}/10")
+
 print("Addition Quiz")
 addend1, addend2, sum1 = question1()
 addend1_2, addend2_2, sum2 = question2()
@@ -289,18 +291,4 @@ check8 = checkAnswer8(ans8, sum8)
 check9 = checkAnswer9(ans9, sum9)
 check10 = checkAnswer10(ans10, sum10)
 
-
-
-
-# these re to checkif the program works well
-print(sum1, ans1, check1)
-print(sum2, ans2, check2)
-print(sum3, ans3, check3)
-print(sum4, ans4, check4)
-print(sum5, ans5, check5)
-print(sum6, ans6, check6)
-print(sum7, ans7, check7)
-print(sum8, ans8, check8)
-print(sum9, ans9, check9)
-print(sum10, ans10, check10)
-
+total = totalScore(check1, check2, check3, check4, check5, check6, check7, check8, check9, check10)
