@@ -4,7 +4,7 @@
 # steps
 # 1 ask 4 numbers
 def askNumbers():
-    _first = float(input('First Number:'))
+    _first = float(input('First Number: '))
     _second = float(input('Second Number: '))
     _third =  float(input('Third Number: ')) 
     _fourth= float(input('Fourth Number: '))
@@ -100,13 +100,34 @@ def arrangeNumbers(_a, _b, _c, _d):
                 print(f"{_c}, {_d}, {_b}, {_a}")
     
     # if d is the highest number
-
-
-        
-    
-
     else:
-        print('others')
+        # if the second highest is a
+        if _a > _b and _a > _c:
+            # if the order will be d-a-b-c
+            if _b > _c:
+                print(f"{_a}, {_a}, {_b}, {_c}")
+            # if the order will be d-a-b-c
+            else:
+                print(f"{_d}, {_a}, {_b}, {_c}")
+
+            # if the second highest is b 
+        elif _b > _a and _b > _c :
+            #if the order will be d-b-a-c
+            if _a > _c:
+                print(f"{_d}, {_b}, {_a}, {_c}") 
+            #if the order will be d-b-c-a
+            else:
+                print(f"{_d}, {_b}, {_c}, {_a}") 
+
+        # if the second highest is c
+        else:
+            # if the order will be d-c-a-b
+            if _a > _b:
+                print(f"{_d}, {_c}, {_a}, {_b}")
+            # if the order will be d-c-b-a 
+            else:
+                print(f"{_d}, {_c}, {_b}, {_a}")
+        
         
 
 a, b, c, d = askNumbers()
