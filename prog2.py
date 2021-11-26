@@ -151,11 +151,101 @@ def checkAnswer6(ans6f, sum6f):
         _check6 = int(0)
         return _check6
 
+def question7():
+    # import 2 random numbers
+    _addend1_7 = int(random.randint(0,99))
+    _addend2_7 = int(random.randint(0,99))
+    # get the sum
+    _sum7 = int(_addend1_7 + _addend2_7)
+    # return values
+    return _addend1_7, _addend2_7, _sum7
 
+# ask question 7
+def askQuestion7(addend1_7f, addend2_7f):
+    _ans7 = int(input(f"7. {addend1_7f} + {addend2_7f} = "))
+    return _ans7
 
+# check if answer #7 is true
+def checkAnswer7(ans7f, sum7f):
+    if ans7f == sum7f:
+        _check7 = int(1)
+        return _check7
+    # if not
+    else:
+        _check7 = int(0)
+        return _check7
 
+def question8():
+    # import 2 random numbers
+    _addend1_8 = int(random.randint(0,99))
+    _addend2_8 = int(random.randint(0,99))
+    # get the sum
+    _sum8 = int(_addend1_8 + _addend2_8)
+    # return values
+    return _addend1_8, _addend2_8, _sum8
 
+# ask question 8
+def askQuestion8(addend1_8f, addend2_8f):
+    _ans8 = int(input(f"8. {addend1_8f} + {addend2_8f} = "))
+    return _ans8
 
+# check if answer #8 is true
+def checkAnswer8(ans8f, sum8f):
+    if ans8f == sum8f:
+        _check8 = int(1)
+        return _check8
+    # if not
+    else:
+        _check8 = int(0)
+        return _check8
+
+def question9():
+    # import 2 random numbers
+    _addend1_9 = int(random.randint(0,99))
+    _addend2_9 = int(random.randint(0,99))
+    # get the sum
+    _sum9 = int(_addend1_9 + _addend2_9)
+    # return values
+    return _addend1_9, _addend2_9, _sum9
+
+# ask question 9
+def askQuestion9(addend1_9f, addend2_9f):
+    _ans9 = int(input(f"9. {addend1_9f} + {addend2_9f} = "))
+    return _ans9
+
+# check if answer #9 is true
+def checkAnswer9(ans9f, sum9f):
+    if ans9f == sum9f:
+        _check9 = int(1)
+        return _check9
+    # if not
+    else:
+        _check9 = int(0)
+        return _check9
+
+def question10():
+    # import 2 random numbers
+    _addend1_10 = int(random.randint(0,99))
+    _addend2_10 = int(random.randint(0,99))
+    # get the sum
+    _sum10 = int(_addend1_10 + _addend2_10)
+    # return values
+    return _addend1_10, _addend2_10, _sum10
+
+# ask question 10
+def askQuestion10(addend1_10f, addend2_10f):
+    _ans10 = int(input(f"10. {addend1_10f} + {addend2_10f} = "))
+    return _ans10
+
+# check if answer #10 is true
+def checkAnswer10(ans10f, sum10f):
+    if ans10f == sum10f:
+        _check10 = int(1)
+        return _check10
+    # if not
+    else:
+        _check10 = int(0)
+        return _check10
 
 
 
@@ -168,6 +258,11 @@ addend1_3, addend2_3, sum3 = question3()
 addend1_4, addend2_4, sum4 = question4()
 addend1_5, addend2_5, sum5 = question5()
 addend1_6, addend2_6, sum6 = question6()
+addend1_7, addend2_7, sum7 = question7()
+addend1_8, addend2_8, sum8 = question8()
+addend1_9, addend2_9, sum9 = question9()
+addend1_10, addend2_10, sum10 = question10()
+
 
 
 ans1 = askQuestion1(addend1, addend2)
@@ -176,6 +271,11 @@ ans3 = askQuestion3(addend1_3, addend2_3)
 ans4 = askQuestion4(addend1_4, addend2_4)
 ans5 = askQuestion5(addend1_5, addend2_5)
 ans6 = askQuestion6(addend1_6, addend2_6)
+ans7 = askQuestion7(addend1_7, addend2_7)
+ans8 = askQuestion8(addend1_8, addend2_8)
+ans9 = askQuestion9(addend1_9, addend2_9)
+ans10 = askQuestion10(addend1_10, addend2_10)
+
 
 
 check1 = checkAnswer1(ans1, sum1)
@@ -184,6 +284,11 @@ check3 = checkAnswer3(ans3, sum3)
 check4 = checkAnswer4(ans4, sum4)
 check5 = checkAnswer5(ans5, sum5)
 check6 = checkAnswer6(ans6, sum6)
+check7 = checkAnswer7(ans7, sum7)
+check8 = checkAnswer8(ans8, sum8)
+check9 = checkAnswer9(ans9, sum9)
+check10 = checkAnswer10(ans10, sum10)
+
 
 
 
@@ -194,3 +299,8 @@ print(sum3, ans3, check3)
 print(sum4, ans4, check4)
 print(sum5, ans5, check5)
 print(sum6, ans6, check6)
+print(sum7, ans7, check7)
+print(sum8, ans8, check8)
+print(sum9, ans9, check9)
+print(sum10, ans10, check10)
+
