@@ -42,6 +42,34 @@ def arrangeNumbers(_a, _b, _c, _d):
                 print(f"{_a}, {_d}, {_c}, {_b}")
 
     # if b is the highest number
+    elif _b > _a and _b > _c and _b > _d :
+        # if the second highest is a
+        if _a > _c and _a > _d:
+            # if the order will be b-a-c-d
+            if _c > _d:
+                print(f"{_b}, {_a}, {_c}, {_d}")
+            # if the order will be b-a-d-c
+            else:
+                print(f"{_b}, {_a}, {_d}, {_c}")
+
+            # if the second highest is c 
+        elif _c > _a and _c > _d :
+            #if the order will be b-c-a-d
+            if _a > _d:
+                print(f"{_b}, {_c}, {_a}, {_d}") 
+            #if the order will be b-c-d-a
+            else:
+                print(f"{_b}, {_c}, {_d}, {_a}") 
+
+        # if the second highest is d
+        else:
+            # if the order will be b-d-a-c
+            if _a > _c:
+                print(f"{_b}, {_d}, {_a}, {_c}")
+            # if the order will be a-d-c-b
+            else:
+                print(f"{_b}, {_d}, {_c}, {_a}")
+ 
     # if c is the highest number 
     # if d is the highest number
 
